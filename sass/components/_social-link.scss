@@ -10,10 +10,9 @@
   margin-right: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -29,13 +28,12 @@
   &:focus {
     background-color: #2196f3;
   }
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: #ffffff;
+  }
 }
 
 .social__icon {
   fill: #afb1b8;
-}
-
-.social__link:hover .social__icon,
-.social__link:focus .social__icon {
-  fill: #ffffff;
 }

@@ -59,12 +59,19 @@
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 
 .header-item {
   position: relative;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .header-link-current::after {
@@ -78,8 +85,18 @@
   top: 45px;
 }
 
-.header-item:not(:last-child) {
-  margin-right: 50px;
+.header-mail {
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
+}
+
+.header-tel {
+  &:hover,
+  &:focus {
+    color: var(--brand-color);
+  }
 }
 
 .header-contacts-list {
@@ -89,18 +106,6 @@
 .header-contacts-item {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-link:hover,
-.header-mail:hover,
-.header-tel:hover {
-  color: var(--brand-color);
-}
-
-.header-link:focus,
-.header-mail:focus,
-.header-tel:focus {
-  color: var(--brand-color);
 }
 
 .btn-mail-icon,
