@@ -24,7 +24,7 @@
   <body>
     <!--header-->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <a href="" class="header-logo"
           >Web<span class="logo-primary">Studio</span></a
@@ -63,7 +63,133 @@
           </li>
         </ul>
       </div>
-    </header> -->
+
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu__top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="./index.html" class="mob-menu__link link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link current">Портфолио</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="" class="mob-menu__link link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu-contacts list">
+              <li class="mob-menu-contacts__item">
+                <a href="tel:+380961111111" class="mob-menu-contacts__tel link">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-menu-contacts__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mob-menu-contacts__mail link"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu-soc list">
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Instagram</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Twitter</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">Facebook</a>
+              </li>
+              <li class="mob-menu-soc__item">
+                <a href="" class="mob-menu-soc__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- mob-menu -->
+
+      <button type="button" class="menu-open-btn">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
+      <div class="mob-menu">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg width="40" height="40">
+                <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <div class="mobile-menu">
+              <ul class="mobile-menu__list list">
+                <li class="mobile-menu__item">
+                  <a href="./index.html" class="mobile-menu__link link current"
+                    >Студия</a
+                  >
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                  <a href="" class="mobile-menu__link link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mob-menu-bottom">
+            <div class="mobile-contacts">
+              <ul class="mobile-menu-contacts list">
+                <li class="mobile-menu-contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="mobile-menu-contacts__tel link"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu-contacts__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-menu-contacts__mail link"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-social list">
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link link">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link link">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link link">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                  <a href="" class="mobile-social__link link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!--main-->
 
@@ -151,10 +277,10 @@
             <li class="works-item">
               <div class="works-text-wrap">
                 <img
+                  srcset="./images/box_1.jpg, ./images-pc2/img1_2x.jpg"
                   src="./images/box_1.jpg"
                   alt="примеры работы компании"
                   width="370"
-                  height="294"
                 />
                 <p class="works-text">Десктопные приложения</p>
               </div>
@@ -163,10 +289,10 @@
             <li class="works-item">
               <div class="works-text-wrap">
                 <img
+                  srcset="./images/box_2.jpg, ./images-pc2/img2_2x.jpg"
                   src="./images/box_2.jpg"
                   alt="примеры работы компании"
                   width="370"
-                  height="294"
                 />
                 <p class="works-text">Мобильные приложения</p>
               </div>
@@ -175,10 +301,10 @@
             <li class="works-item">
               <div class="works-text-wrap">
                 <img
+                  srcset="./images/box_3.jpg, ./images-pc2/img3_2x.jpg"
                   src="./images/box_3.jpg"
                   alt="примеры работы компании"
                   width="370"
-                  height="294"
                 />
                 <p class="works-text">Дизайнерские решения</p>
               </div>
@@ -189,21 +315,21 @@
 
       <!--team-->
 
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/img.jpg 1x, ./images-pc2/igor2-min.jpg 2x"
+                  srcset="./images/img.jpg 1x, ./images-pc2/igor2-pc.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
                 <source
                   srcset="
-                    ./images-tablet/igor1-tab.jpg 1x,
-                    ./images-tablet/igor2-tab.jpg 2x
+                    ../images-tablet/igor1-tab.jpg 1x,
+                    ../images-tablet/igor2-tab.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
@@ -290,7 +416,7 @@
                   media="(min-width: 480px)"
                 />
                 <img
-                  src="./images/img1.jpg"
+                  src="./images/olja1-pc.jpg"
                   alt="фото Ольга Репина_разработчик"
                   width="450"
                 />
@@ -338,7 +464,7 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/img2.jpg 1x, ./images-pc2/kolja2-min.jpg 2x"
+                  srcset="./images/img2.jpg 1x, ./images-pc2/kolja2-pc.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
@@ -360,7 +486,7 @@
                 <img
                   src="./images/img2.jpg"
                   alt="фото Николай Тарасов_маркетолог"
-                  width="270"
+                  max-width="100%"
                 />
               </picture>
 
@@ -407,14 +533,14 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/img3.jpg 1x, ./images-pc2/miha2-min.jpg 2x"
+                  srcset="./images/img3.jpg 1x, ./images-pc2/miha2-pc.jpg 2x"
                   media="(min-width: 1200px)"
                 />
 
                 <source
                   srcset="
-                    ./images-tablet/miha1-min.jpg 1x,
-                    ./images-tablet/miha2-min.jpg 2x
+                    ./images-tablet/miha1-tab.jpg 1x,
+                    ./images-tablet/miha2-tab.jpg 2x
                   "
                   media="(min-width: 768px)"
                 />
@@ -429,7 +555,7 @@
                 <img
                   src="./images/img3.jpg"
                   alt="фото Михаил Ермаков_дизайнер"
-                  width="270"
+                  max-width="100%"
                 />
               </picture>
 
@@ -472,7 +598,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Clients -->
 
@@ -579,7 +705,7 @@
           </ul>
         </div>
 
-        <div class="footer-email-input">
+        <div class="subscribe">
           <b class="footer-form-title">Подпишитесь на рассылку</b>
           <form action class="footer-form">
             <label>
@@ -696,5 +822,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

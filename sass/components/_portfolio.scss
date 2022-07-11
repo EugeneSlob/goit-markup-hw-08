@@ -3,21 +3,23 @@
 }
 
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .projects-list-btn {
   display: flex;
-  /*padding-top: 94px;*/
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  gap: 15px 8px;
+  margin-bottom: 40px;
   justify-content: center;
-}
-
-.projects-item {
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover .projects-top-text {
-    transform: translateY(0);
+  @include tablet {
+    justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -31,6 +33,40 @@
   }
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.projects img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  // img {
+  //   display: block;
+  // }
+}
+
+.projects-item {
+  width: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover .projects-top-text {
+    transform: translateY(0);
+  }
+  cursor: pointer;
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
   }
 }
 
@@ -95,33 +131,12 @@
   color: var(--second-text);
 }
 
-.projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  img {
-    display: block;
-  }
-}
-
 .projects-text {
+  flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 24px 24px 20px 24px;
-}
-
-.projects-item {
-  /*border: 1px solid #eeeeee;*/
-  /* margin-right: 30px; */
-  /* margin-bottom: 30px; */
-  margin: 15px;
-  flex-basis: calc(100% / 3 - 30px);
-  cursor: pointer;
-  &:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
 }
 
 .work-list-title {
