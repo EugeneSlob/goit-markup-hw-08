@@ -24,10 +24,22 @@
 
 .header-nav ul {
   display: none;
+  @include tablet {
+    display: flex;
+    @include desktop {
+      display: flex;
+    }
+  }
 }
 
 .header-contacts-list li {
   display: none;
+  @include tablet {
+    display: flex;
+    @include desktop {
+      display: flex;
+    }
+  }
 }
 
 .header-nav {
@@ -177,6 +189,18 @@
   margin-left: auto;
   border: none;
   background-color: #ffffff;
+}
+
+.menu-open-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
 }
 
 .menu-close-btn {
