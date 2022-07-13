@@ -68,7 +68,6 @@ li {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -680,13 +679,17 @@ li {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 .team img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-bottom: 94px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -820,8 +823,32 @@ li {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--basic-text);
-  margin-top: 60px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+  .clients-title {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients-list {
@@ -942,6 +969,11 @@ li {
     margin-bottom: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .projects-list-btn {
+    margin-bottom: 50px;
+  }
+}
 
 .projects-item-nav {
   margin-right: 8px;
@@ -953,6 +985,11 @@ li {
 }
 .projects-item-nav:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 1200px) {
+  .projects-item-nav {
+    margin-right: 9px;
+  }
 }
 
 .projects img {
@@ -1293,7 +1330,7 @@ li {
 @media screen and (min-width: 768px) {
   .subscribe {
     width: 450px;
-    margin: 60px 152px 0 166px;
+    margin: 0px 152px 0 166px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1421,6 +1458,16 @@ li {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
 }
 
 .modal-close-btn {

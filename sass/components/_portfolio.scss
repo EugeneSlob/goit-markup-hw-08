@@ -17,9 +17,13 @@
   gap: 15px 8px;
   margin-bottom: 40px;
   justify-content: center;
+
   @include tablet {
     justify-content: center;
     margin-bottom: 30px;
+  }
+  @include desktop {
+    margin-bottom: 50px;
   }
 }
 
@@ -33,6 +37,9 @@
   }
   &:last-child {
     margin-right: 0;
+  }
+  @include desktop {
+    margin-right: 9px;
   }
 }
 
